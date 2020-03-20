@@ -1,0 +1,25 @@
+// sidebar
+$menuText:#bfcbd9;          //侧边路由未被选中的字体颜色
+$menuActiveText:#409EFF;    //侧边被选中字体颜色
+$subMenuActiveText:#f4f4f5; //侧边被选中路由上级字体颜色
+
+$menuBg:#304156;        //侧边路由背景颜色
+$menuHover:#263445;     //侧边路由鼠标悬停背景颜色
+
+$subMenuBg:#1f2d3d;     //侧边二级分类背景颜色
+$subMenuHover:#001528;  //侧边二级分类悬停背景颜色
+
+$sideBarWidth: 210px;   //侧边路由长度
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}
